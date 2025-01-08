@@ -56,7 +56,7 @@ public class Computer {
         Iterator<Partition> it = partitions.iterator();
         while (it.hasNext()) {
             if (it.equals(partitions.get(index))) {
-                partitions.remove(it);
+                it.remove();
                 partitions.add(partition);
             }
         }
