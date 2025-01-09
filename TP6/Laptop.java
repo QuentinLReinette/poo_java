@@ -1,6 +1,8 @@
-public class Laptop extends Computer {
+public class Laptop extends Computer implements Connected, Gamer {
 	private float screenSize;
 	private int batteryLoad;
+	private boolean isConnected;
+	private boolean isPlaying;
 
 	public Laptop(String id, String brand, String model, int ram, float cpuFrequency, float screenSize) {
 		super(id, brand, model, ram, cpuFrequency);
@@ -9,6 +11,35 @@ public class Laptop extends Computer {
 	}
 
 	public Laptop() {
+	}
+
+	public boolean getConnected() {
+		return isConnected;
+	}
+
+	public boolean getPlaying() {
+		return isPlaying;
+	}
+
+	@Override
+	public void Connect() {
+		this.isConnected = true;
+	}
+
+	@Override
+	public void Disconnect() {
+		this.isConnected = false;
+
+	}
+
+	@Override
+	public void Start() {
+		this.isPlaying = true;
+	}
+
+	@Override
+	public void Stop() {
+		this.isPlaying = false;
 	}
 
 	@Override

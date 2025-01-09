@@ -1,14 +1,17 @@
-public class Server extends Computer {
+public class Server extends Computer implements Connected {
 	private int bayNumber;
 	private int raid;
+	private boolean isConnected;
 
 	public Server(String id, String brand, String model, int ram, float cpuFrequency, int bayNumber, int raid) {
 		super(id, brand, model, ram, cpuFrequency);
 		this.bayNumber = bayNumber;
 		this.raid = raid;
+		this.isConnected = false;
 	}
 
 	public Server() {
+		this.isConnected = false;
 	}
 
 	@Override
@@ -36,5 +39,20 @@ public class Server extends Computer {
 
 	public void setRaid(int newRaid) {
 		this.raid = newRaid;
+	}
+
+	public boolean getConnected() {
+		return isConnected;
+	}
+
+	@Override
+	public void Connect() {
+		this.isConnected = true;
+	}
+
+	@Override
+	public void Disconnect() {
+		this.isConnected = false;
+
 	}
 }
