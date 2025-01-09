@@ -12,6 +12,16 @@ public class Laptop extends Computer {
 	}
 
 	@Override
+	public void update() {
+		if (this.getBatteryLoad() <= 50) {
+			System.out.println("error : battery load < 50%");
+			return;
+		}
+		this.setVersion(2);
+		System.out.println("system updated");
+	}
+
+	@Override
 	public String toString() {
 		return super.toString() + "\nscreen size: " + screenSize + "\nbattery load: " + batteryLoad;
 	}

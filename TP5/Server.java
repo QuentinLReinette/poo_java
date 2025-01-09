@@ -16,6 +16,12 @@ public class Server extends Computer {
 		return super.toString() + "\nbay number: " + bayNumber + "\nraid: " + raid;
 	}
 
+	@Override
+	public void update() {
+		this.setVersion(2);
+		System.out.println("system updated");
+	}
+
 	public int getBayNumber() {
 		return this.bayNumber;
 	}

@@ -9,6 +9,7 @@ public abstract class Computer {
 	private float cpuFrequency;
 	private String status;
 	private ArrayList<Partition> partitions;
+	private int version;
 
 	public Computer(String id, String brand, String model, int ram, float cpuFrequency) {
 		this.id = id;
@@ -16,20 +17,22 @@ public abstract class Computer {
 		this.model = model;
 		this.ram = ram;
 		this.cpuFrequency = cpuFrequency;
+		this.version = 1;
 	}
 
 	public Computer(String id, int ram, float cpuFrequency) {
 		this.id = id;
 		this.ram = ram;
 		this.cpuFrequency = cpuFrequency;
+		this.version = 1;
+	}
+	
+	public Computer() {
 	}
 
 	public String toString() {
 		return "\nid: " + id + "\nbrand: " + brand + "\nmodel: " + model + "\nram: " + ram
 				+ "\nCPU frequency: " + cpuFrequency + "\nstatus: " + status;
-	}
-
-	public Computer() {
 	}
 
 	public abstract void update();
@@ -62,6 +65,14 @@ public abstract class Computer {
 				partitions.add(partition);
 			}
 		}
+	}
+
+	public int getVersion() {
+		return this.version;
+	}
+
+	public void setVersion(int newVersion) {
+		this.version = newVersion;
 	}
 
 	public String getId() {
