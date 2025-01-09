@@ -274,13 +274,15 @@ public class Program {
 				break;
 			case 6:
 				return;
-			/* case 7:
-				Partition part = new Partition('Z', 142);
-				desktop.add(part);
-			case 8:
-				Partition newPart = new Partition('R', 55);
-				desktop.set(0, newPart);
-				desktop.p */
+			/*
+			 * case 7:
+			 * Partition part = new Partition('Z', 142);
+			 * desktop.add(part);
+			 * case 8:
+			 * Partition newPart = new Partition('R', 55);
+			 * desktop.set(0, newPart);
+			 * desktop.p
+			 */
 			default:
 				System.out.println("Invalid choice");
 				desktopOptions(desktop, scan);

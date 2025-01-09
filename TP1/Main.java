@@ -7,13 +7,13 @@ public class Main {
 		Computer ordi = computerInit(args, scan);
 
 		System.out.println("\nId : " + ordi.getId() +
-							"\nBrand : " + ordi.getBrand() +
-							"\nModel : " + ordi.getModel() +
-							"\nRAM : " + ordi.getRam() +
-							"\nCPU frequency : " + ordi.getCpuFrequency());
+				"\nBrand : " + ordi.getBrand() +
+				"\nModel : " + ordi.getModel() +
+				"\nRAM : " + ordi.getRam() +
+				"\nCPU frequency : " + ordi.getCpuFrequency());
 
 		userOptions(ordi, scan);
-		
+
 		scan.close();
 	}
 
@@ -50,7 +50,7 @@ public class Main {
 		return;
 	}
 
-	public static Computer computerInit(String[] args, Scanner scan ) {
+	public static Computer computerInit(String[] args, Scanner scan) {
 
 		System.out.println("\nEnter computer id: ");
 		String id = scan.nextLine();
