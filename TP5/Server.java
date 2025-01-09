@@ -18,7 +18,7 @@ public class Server extends Computer {
 
 	@Override
 	public void update() {
-		this.setVersion(2);
+		this.setVersion(getVersion()+1);
 		System.out.println("system updated");
 	}
 

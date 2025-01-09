@@ -17,7 +17,7 @@ public class Laptop extends Computer {
 			System.out.println("error : battery load < 50%");
 			return;
 		}
-		this.setVersion(2);
+		this.setVersion(getVersion()+1);
 		System.out.println("system updated");
 	}
 
