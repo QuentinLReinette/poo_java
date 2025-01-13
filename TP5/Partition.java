@@ -1,3 +1,5 @@
+package TP5;
+
 public class Partition {
 
 	private char letter;

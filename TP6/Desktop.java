@@ -1,3 +1,5 @@
+package TP6;
+
 public class Desktop extends Computer implements Connected, Gamer {
 	private boolean isConnected;
 	private boolean isPlaying;

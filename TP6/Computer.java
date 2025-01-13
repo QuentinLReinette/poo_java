@@ -1,3 +1,5 @@
+package TP6;
+
 import java.util.*;
 
 public abstract class Computer {

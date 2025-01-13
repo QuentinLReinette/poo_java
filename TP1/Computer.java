@@ -1,3 +1,5 @@
+package TP1;
+
 public class Computer {
 
 	private String id;

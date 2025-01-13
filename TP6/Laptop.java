@@ -1,3 +1,5 @@
+package TP6;
+
 public class Laptop extends Computer implements Connected, Gamer {
 	private float screenSize;
 	private int batteryLoad;

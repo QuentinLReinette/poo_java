@@ -1,3 +1,5 @@
+package TP3;
+
 public class Laptop extends Computer {
 	private float screenSize;
 	private int batteryLoad;

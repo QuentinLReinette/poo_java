@@ -1,3 +1,5 @@
+package TP6;
+
 public class Server extends Computer implements Connected {
 	private int bayNumber;
 	private int raid;

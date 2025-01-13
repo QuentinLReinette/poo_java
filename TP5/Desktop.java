@@ -1,3 +1,5 @@
+package TP5;
+
 public class Desktop extends Computer {
 	public Desktop(String id, int ram, float cpuFrequency) {
 		super(id, ram, cpuFrequency);

@@ -1,3 +1,5 @@
+package TP5;
+
 import java.util.*;
 
 public abstract class Computer {

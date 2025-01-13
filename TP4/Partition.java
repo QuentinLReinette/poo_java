@@ -1,3 +1,5 @@
+package TP4;
+
 public class Partition {
 
 	private char letter;

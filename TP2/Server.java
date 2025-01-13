@@ -1,3 +1,5 @@
+package TP2;
+
 public class Server extends Computer {
 	private int bayNumber;
 	private int raid;
